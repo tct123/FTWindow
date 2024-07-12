@@ -5,7 +5,7 @@ app = fs.FletEasy(route_init="/")
 
 
 # We add a page
-@app.page(route="/", title="Flet-Easy")
+@app.page(route="/", title="FTWindow - Home")
 def index_page(data: fs.Datasy):
     return ft.View(
         controls=[
