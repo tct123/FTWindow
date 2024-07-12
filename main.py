@@ -4,7 +4,6 @@ app = fs.FletEasy(route_init="/flet-easy")
 # We add a page
 @app.page(route="/flet-easy", title="Flet-Easy")
 def index_page(data: fs.Datasy):
-
     return ft.View(
         controls=[
             ft.Text("Home page"),
@@ -39,8 +38,5 @@ def counter_page(data: fs.Datasy):
         vertical_alignment="center",
         horizontal_alignment="center",
     )
-
-
 # We run the application
-
 app.run()
