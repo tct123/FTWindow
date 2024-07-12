@@ -48,5 +48,4 @@ def counter_page(data: fs.Datasy):
     )
 
 
-# We run the application
 app.run()
