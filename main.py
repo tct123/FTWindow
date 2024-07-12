@@ -1,11 +1,11 @@
 import flet as ft
 import flet_easy as fs
 
-app = fs.FletEasy(route_init="/flet-easy")
+app = fs.FletEasy(route_init="/")
 
 
 # We add a page
-@app.page(route="/flet-easy", title="Flet-Easy")
+@app.page(route="/", title="Flet-Easy")
 def index_page(data: fs.Datasy):
     return ft.View(
         controls=[
@@ -41,7 +41,7 @@ def counter_page(data: fs.Datasy):
                 ],
                 alignment="center",
             ),
-            ft.FilledButton("Go to Home", on_click=data.go("/flet-easy")),
+            ft.FilledButton("Go to Home", on_click=data.go("/")),
         ],
         vertical_alignment="center",
         horizontal_alignment="center",
