@@ -1,5 +1,6 @@
 import flet as ft
 
+
 def main(page: ft.Page):
     page.window.bgcolor = ft.colors.TRANSPARENT
     page.bgcolor = ft.colors.TRANSPARENT
@@ -8,5 +9,6 @@ def main(page: ft.Page):
     page.window.left = 200
     page.window.top = 200
     page.add(ft.ElevatedButton("I'm a floating button!"))
+
 
 ft.app(target=main)
